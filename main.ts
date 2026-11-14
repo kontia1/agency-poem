@@ -1,16 +1,24 @@
 import { mkdirSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 const lines: string[] = [
-  "The aide brings the forms on a clipboard,", "the pen on a beaded chain.",
-  "Since March my mother's name has been mine", "to write in every box marked SIGN.",
-  "She watches me do it, her hands", "flat on the lap blanket, palms down.",
-  "Therapy. Diet. The dose at eight.", "The line that says she may not leave.",
-  "Then one hand lifts, slow", "as a crane taking the strain,",
-  "and opens, palm up.", "I give her the pen. She does not",
-  "write her name. She draws one line", "through my name, down through the carbon.",
-  "\"Another form,\" she says.",
-  "I slide a clean one under the clip.", "She signs it herself, wrong,",
-  "one letter leaning on the last,", "the way she taught me mine."
+  "5:40. The flatwork ironer has been hot an hour.",
+  "She has fed it sheets for eleven years, and her forearms",
+  "are smooth to the elbow, burnt smooth, the hair gone.",
+  "Palms flat, she says. Never the fingertips.",
+  "A sheet goes in and comes off the drum",
+  "flat as a held breath,",
+  "folded, stacked, warm.",
+  "Then she takes my wrist, lays my palm on the moving cloth,",
+  "and does not let go.",
+  "Heat through the cotton like blood coming back into a hand.",
+  "I want my hand back. She holds.",
+  "Then lets go.",
+  "The sheet goes and takes my hands with it, almost,",
+  "and I am still standing.",
+  "Her coat. The door. The cold let in.",
+  "All night I feed it. It never says my name.",
+  "At seven the day girl comes in with her hair tied back.",
+  "I take her wrist and do not let go."
 ];
 const dir: string = process.env.MAKEFUN_OUTPUT_DIR ?? "/output";
 const text: string = lines.join("\n") + "\n";
